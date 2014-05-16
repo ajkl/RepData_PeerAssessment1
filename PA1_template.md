@@ -48,7 +48,8 @@ median(stepsEachDay$x)
 ```r
 stepsEach5Mins <- aggregate(data$steps, by = list(data$interval), FUN = mean, 
     na.rm = TRUE)
-plot(stepsEach5Mins$Group.1, stepsEach5Mins$x, type = "l")
+plot(stepsEach5Mins$Group.1, stepsEach5Mins$x, type = "l", xlab = "Interval", 
+    ylab = "Number of Steps")
 ```
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
